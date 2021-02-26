@@ -13,6 +13,7 @@ export const Foot = styled.div`
     margin-left: 6.2%;
     margin-bottom: 6.5%;
     margin-right: 5px;
+    opacity: 0.8;
 
     &.a active{
         color: #4B4B4B;
@@ -24,6 +25,7 @@ export const FootL = styled.div`
     font-weight: medium;
     color: #4B4B4B;
     text-decoration: underline;
+    opacity: 0.8;
 `
 
 const Footer = () => {
