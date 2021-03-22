@@ -15,3 +15,5 @@ export const HeroTitle = styled.h1``
 export const HeroSubTitle = styled.h2``
 export const HeroSearch = styled.div``
 
+export const SubmitButton = styled.button``
+
