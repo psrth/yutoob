@@ -5,8 +5,8 @@ const Hero = () => {
     return(
         <HeroContainer>
             <HeroTextSection>
-                <HeroTitle></HeroTitle>
-                <HeroSubTitle></HeroSubTitle>
+                <HeroTitle>Hello</HeroTitle>
+                <HeroSubTitle>Gello</HeroSubTitle>
                 <HeroSearch></HeroSearch>
             </HeroTextSection>
             <HeroImage></HeroImage>

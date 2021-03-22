@@ -8,11 +8,10 @@ export const HeroContainer = styled.div`
     margin-right: 6%;
     margin-top: 3%;
     backround: #0233f0;
-    height: 800px;
 `
 export const HeroTextSection = styled.div``
 export const HeroImage = styled.div``
-export const HeroTitle = styled.div``
-export const HeroSubTitle = styled.div``
+export const HeroTitle = styled.h1``
+export const HeroSubTitle = styled.h2``
 export const HeroSearch = styled.div``
 
