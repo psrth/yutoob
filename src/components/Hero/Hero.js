@@ -18,8 +18,6 @@ const Hero = (props) => {
                         </label>
                         <button onClick={props.onSubmitHandler}>submit</button>
                     </form>
-                    <p>{props.searchString}</p>
-                    <p>{props.activePage}</p>
                     </HeroSearch>
                 </HeroTextSection>
                 <HeroImage></HeroImage>

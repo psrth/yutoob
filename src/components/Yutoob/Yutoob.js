@@ -50,16 +50,13 @@ const Yutoob = () => {
             searchString={search.searchString}
             activePage={search.activePage} 
         /> : (search.link === null) ?
-        <div>
-            <h1>hi {search.link}</h1>
         <Results 
             onSubmitHandler={() => onSubmitHandler}
             searchString={search.searchString}
             activePage={search.activePage} 
             link={search.link}
             modifyLink={modifyLink}
-        />
-            </div> : 
+        /> : 
         <Video 
             link={search.link}
         />

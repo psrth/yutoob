@@ -16,7 +16,7 @@ const Navbar = () => {
         <Router>
             <Nav>
                 <NavLogo>
-                    <Link to="/">youtoob.org</Link>
+                    <a href="https://yutoob.netlify.app/">youtoob.org</a>
                 </NavLogo>
                 <NavMenu>
                     <NavItem>

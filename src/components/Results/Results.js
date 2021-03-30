@@ -37,7 +37,6 @@ const Results = (props) => {
 
     return (
         <div>
-            
             {results.map((result, idx) => (
                 <Result 
                     key={idx}
