@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
-import { HeroContainer, HeroTextSection, HeroImage, HeroTitle, HeroSubTitle, HeroSearch, SubmitButton } from './HeroElements'
+
+import Hero from '../Hero/Hero'
+import Results from '../Results/Results'
+import Video from '../Video/Video'
+
 
 const Yutoob = () => {
 
@@ -8,7 +12,6 @@ const Yutoob = () => {
         activePage: 1,
     });
 
-    
     const onChangeHandler = (e) => {
         setSearch(
             {
@@ -16,7 +19,6 @@ const Yutoob = () => {
                 activePage: search.activePage
             }
         )
-
     }
 
     const onSubmitHandler = (e) => {
@@ -36,58 +38,16 @@ const Yutoob = () => {
         )
     }
 
-        return(
-            <Hero
-                onChangeHandler={onChangeHandler}
-                onSubmitHandler={onSubmitHandler}
-                searchString={search.searchString}
-                activePage={search.activePage} 
-            />
-        )
-    }
-    
 
-    const Hero = (props) => {
-        return (
-            <HeroContainer>
-                    <HeroTextSection>
-                        <HeroTitle>yutoob.org</HeroTitle>
-                        <HeroSubTitle>a tethical way to use youtube</HeroSubTitle>
-                        <HeroSearch>
-                        <form>
-                            <label>
-                                <input 
-                                    type="text" 
-                                    placeholder="type to search youtube" 
-                                    onChange={props.onChangeHandler} 
-                                    name="name" />
-                            </label>
-                            <button onClick={props.onSubmitHandler}>submit</button>
-                        </form>
-                        <p>{props.searchString}</p>
-                        <p>{props.activePage}</p>
-                        </HeroSearch>
-                    </HeroTextSection>
-                    <HeroImage></HeroImage>
-                </HeroContainer>
-        )
-    }
-
-
-    const Search = (props) => {
-        return(
-            <div>
-                {/* { search } */}
-            </div>
-        )
-    }
-    
-    const Video = (props) => {
-        return(
-            <div></div>
-        )
-    }
-
-
+    return(
+        (search.activePage === 1) ?
+        <Hero
+            onChangeHandler={onChangeHandler}
+            onSubmitHandler={onSubmitHandler}
+            searchString={search.searchString}
+            activePage={search.activePage} 
+        /> : null
+    )
+}
 
 export default Yutoob;
