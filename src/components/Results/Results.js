@@ -16,7 +16,6 @@ const Results = (props) => {
     searchString = "search?part=snippet&maxResults=25&q="+searchString+"&key=AIzaSyBd0D-4XVB6Une2u72WUPZk550rdRDsLsM";
 
     const [results, setResults] = useState([]);
-    console.log("Results: ", results);
 
     const getResults = async () => {
         const response = await api

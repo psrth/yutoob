@@ -10,7 +10,7 @@ const Yutoob = () => {
     const [search, setSearch] = useState( {
         searchString: "",
         activePage: 1,
-        link: "",
+        link: null,
     });
 
     const onChangeHandler = (e) => {
@@ -31,8 +31,8 @@ const Yutoob = () => {
         })
     }
 
-    const onSubmitHandler = (e) => {
-        // e.preventDefault();
+    const onSubmitHandler = () => {
+        console.log(search.link)
         setSearch(
             {
                 searchString: search.searchString,
@@ -49,11 +49,11 @@ const Yutoob = () => {
             onSubmitHandler={onSubmitHandler}
             searchString={search.searchString}
             activePage={search.activePage} 
-        /> : (search.activePage === 2) ?
+        /> : (search.link === null) ?
         <div>
             <h1>hi {search.link}</h1>
         <Results 
-            onSubmitHandler={onSubmitHandler}
+            onSubmitHandler={() => onSubmitHandler}
             searchString={search.searchString}
             activePage={search.activePage} 
             link={search.link}
@@ -61,6 +61,7 @@ const Yutoob = () => {
         />
             </div> : 
         <Video 
+            link={search.link}
         />
     )
 }
