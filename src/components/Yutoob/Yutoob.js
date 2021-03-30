@@ -10,32 +10,35 @@ const Yutoob = () => {
     const [search, setSearch] = useState( {
         searchString: "",
         activePage: 1,
+        link: "",
     });
 
     const onChangeHandler = (e) => {
         setSearch(
             {
                 searchString: e.target.value,
-                activePage: search.activePage
+                activePage: search.activePage,
+                link: search.link,
             }
         )
     }
 
+    const modifyLink = (str) => {
+        setSearch ({
+            searchString: search.searchString,
+            activePage: search.activePage,
+            link: "https://www.youtube.com/watch?v="+str,
+        })
+    }
+
     const onSubmitHandler = (e) => {
-        e.preventDefault();
-        search.activePage !== 3 ? 
+        // e.preventDefault();
         setSearch(
             {
                 searchString: search.searchString,
-                activePage: search.activePage + 1
-            }
-        ) :
-        setSearch(
-            {
-                searchString: search.searchString,
-                activePage: 1
-            }
-        )
+                activePage: search.activePage + 1,
+                link: search.link,
+            })
     }
 
 
@@ -47,10 +50,18 @@ const Yutoob = () => {
             searchString={search.searchString}
             activePage={search.activePage} 
         /> : (search.activePage === 2) ?
+        <div>
+            <h1>hi {search.link}</h1>
         <Results 
+            onSubmitHandler={onSubmitHandler}
             searchString={search.searchString}
-        /> : 
-        <Video />
+            activePage={search.activePage} 
+            link={search.link}
+            modifyLink={modifyLink}
+        />
+            </div> : 
+        <Video 
+        />
     )
 }
 

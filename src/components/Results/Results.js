@@ -23,16 +23,46 @@ const Results = (props) => {
             .get(searchString)
             .catch((err) => console.log("Error: ", err));
         
-        if (response && response.data) setResults(response.data);
+        if (response && response.data) setResults(response.data.items);
     };
 
     useEffect(() => {
         getResults();
     }, []);
 
+    const modifyLinker = (idx) => {
+        props.modifyLink(results[idx].id.videoId);
+        props.onSubmitHandler();
+    }
+
+
     return (
-        <div>{props.searchString}</div>
+        <div>
+            
+            {results.map((result, idx) => (
+                <Result 
+                    key={idx}
+                    onClick={() => modifyLinker(idx)}
+                    {...result}
+                />
+            ))}
+        </div>
     )
 }
+
+const Result = (props) => {
+    return(
+        <div onClick={props.onClick}>
+            <br></br><br></br>
+            <h1>{props.snippet.title}</h1>
+            <img src={props.snippet.thumbnails.medium.url}></img>
+            <h2>{props.snippet.channelTitle}</h2>
+            <p>{props.snippet.description}</p>
+            <br></br>
+        </div>
+        
+    )
+}
+
 
 export default Results;
