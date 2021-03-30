@@ -27,7 +27,7 @@ const Yutoob = () => {
         setSearch ({
             searchString: search.searchString,
             activePage: search.activePage,
-            link: "https://www.youtube.com/watch?v="+str,
+            link: "https://www.youtube.com/embed/"+str,
         })
     }
 

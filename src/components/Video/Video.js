@@ -3,7 +3,11 @@ import React from 'react'
 const Video = (props) => {
     return (
         <div>
-            <h1>{props.link}</h1>
+            <iframe 
+                src={props.link}
+                width="1000" 
+                height="600"
+            ></iframe>
         </div>
     )
 }
