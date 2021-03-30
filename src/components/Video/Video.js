@@ -2,7 +2,7 @@ import React from 'react'
 
 const Video = (props) => {
     return (
-        <div></div>
+        <div>Video</div>
     )
 }
 

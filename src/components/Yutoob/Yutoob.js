@@ -46,7 +46,11 @@ const Yutoob = () => {
             onSubmitHandler={onSubmitHandler}
             searchString={search.searchString}
             activePage={search.activePage} 
-        /> : null
+        /> : (search.activePage === 2) ?
+        <Results 
+            searchString={search.searchString}
+        /> : 
+        <Video />
     )
 }
 

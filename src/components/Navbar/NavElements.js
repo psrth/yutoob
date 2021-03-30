@@ -20,6 +20,10 @@ export const NavLogo = styled.div`
     font-weight: bold;
 `
 
+export const NavRlod = styled.h3`
+    cursor: pointer;
+`
+
 export const NavMenu = styled.ul`
     display: flex;
     flex-direction: row;
