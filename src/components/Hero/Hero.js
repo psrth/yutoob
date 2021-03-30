@@ -1,27 +1,26 @@
 import React from 'react'
-import { HeroContainer, HeroTextSection, HeroImage, HeroTitle, HeroSubTitle, HeroSearch, SubmitButton } from './HeroElements'
 
 const Hero = (props) => {
     return (
-        <HeroContainer>
-                <HeroTextSection>
-                    <HeroTitle>yutoob.org</HeroTitle>
-                    <HeroSubTitle>a tethical way to use youtube</HeroSubTitle>
-                    <HeroSearch>
-                    <form>
-                        <label>
-                            <input 
-                                type="text" 
-                                placeholder="type to search youtube" 
-                                onChange={props.onChangeHandler} 
-                                name="name" />
-                        </label>
-                        <button onClick={props.onSubmitHandler}>submit</button>
-                    </form>
-                    </HeroSearch>
-                </HeroTextSection>
-                <HeroImage></HeroImage>
-            </HeroContainer>
+        <div>
+            <div>
+                <h1>yutoob.org</h1>
+                <h2>a tethical way to use youtube</h2>
+                <div>
+                <form>
+                    <label>
+                        <input 
+                            type="text" 
+                            placeholder="type to search youtube" 
+                            onChange={props.onChangeHandler} 
+                            name="name" />
+                    </label>
+                    <button onClick={props.onSubmitHandler}>submit</button>
+                </form>
+                </div>
+            </div>
+            <div></div>
+        </div>
     )
 }
 
