@@ -1,12 +1,15 @@
 import React from 'react'
 
+import './Video.css'
+
 const Video = (props) => {
     return (
-        <div>
+        <div className="vid-wrapper">
             <iframe 
+                className="vid"
                 src={props.link}
-                width="1000" 
-                height="600"
+                width="100%" 
+                height="550px"
             ></iframe>
         </div>
     )

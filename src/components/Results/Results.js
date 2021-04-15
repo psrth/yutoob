@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
+import './Results.css'
+
 const api = axios.create({
     baseURL: 'https://youtube.googleapis.com/youtube/v3/'
 })
@@ -50,13 +52,19 @@ const Results = (props) => {
 
 const Result = (props) => {
     return(
-        <div onClick={props.onClick}>
-            <br></br><br></br>
-            <h1>{props.snippet.title}</h1>
-            <img src={props.snippet.thumbnails.medium.url}></img>
-            <h2>{props.snippet.channelTitle}</h2>
-            <p>{props.snippet.description}</p>
-            <br></br>
+        <div 
+            className="result-item"
+            onClick={props.onClick}
+        >
+            <img 
+                className="result-img"
+                src={props.snippet.thumbnails.medium.url}
+            ></img>
+            <div className="result-text">
+                <h1 className="result-heading">{props.snippet.title}</h1>
+                <h2 className="result-channel">{props.snippet.channelTitle}</h2>
+                <p className="result-desc">{props.snippet.description}</p>
+            </div>
         </div>
         
     )
