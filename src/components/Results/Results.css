@@ -1,0 +1,36 @@
+.result-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.result-img {
+    margin-right: 30px;
+}
+
+.result-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.result-heading{
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(34, 34, 34);
+}
+
+.result-channel{
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(59, 59, 59);
+}
+
+.result-desc{
+    font-size: 18px;
+    font-weight: 100;
+    color: rgb(87, 87, 87);
+}
+
+

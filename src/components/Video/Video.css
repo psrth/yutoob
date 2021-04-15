@@ -1,0 +1,13 @@
+.vid-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.vid {
+
+}
+
+iframe {
+    border: none;
+    outline: none;
+}

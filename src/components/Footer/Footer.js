@@ -7,7 +7,7 @@ const Footer = () => {
                 {
                     fontSize: "24px",
                     color: "gray",
-                    marginTop: "80px",
+                    marginTop: "60px",
                 }
             }>
                 Made with love by @psrth
