@@ -1,0 +1,54 @@
+.nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    width: 70%;
+    align-self: flex-start;
+
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.nav-item {
+
+}
+
+h2 {
+    font-size: 30px;
+    color: rgb(77, 77, 77) !important;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 30px;
+    color: grey;
+    font-weight: 400;
+}
+
+a:link {
+    color: grey;
+}
+  
+  /* visited link */
+a:visited {
+    color: grey;
+}
+  
+  /* mouse over link */
+a:hover {
+    color: rgb(77, 77, 77);
+}
+  
+  /* selected link */
+a:active {
+    color: gray;
+}

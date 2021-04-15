@@ -1,4 +1,5 @@
 import React from 'react'
+import './Navbar.css';
 
 import { 
     BrowserRouter as Router,
@@ -12,23 +13,32 @@ import Yutoob from '../Yutoob/Yutoob.js'
 const Navbar = () => {
     return(
         <Router>
-            <nav>
-                <div>
-                    <a href="https://yutoob.netlify.app/">youtoob.org</a>
+            
+            <div class="nav-wrapper">
+                <div class="nav-logo">
+                    <h2>
+                        <a href="https://yutoob.netlify.app/">
+                            youtoob.org
+                        </a>
+                    </h2>
                 </div>
-                <ul>
-                    <div>
-                        <div>
-                            <Link to="/about">About</Link>
-                        </div>
+                <div class="nav-items">
+                    <div class="nav-item">
+                    <h3>
+                        <Link to="/about">
+                            About
+                        </Link>
+                    </h3>
                     </div>
-                    <div>
-                        <div>
-                            <Link to="/sponsor">Sponsor</Link>
-                        </div>
+                    <div class="nav-item">
+                    <h3>
+                        <Link to="/sponsor">
+                            Sponsor
+                        </Link>
+                    </h3>
                     </div>
-                </ul>
-            </nav>
+                </div>
+            </div>
 
             <Switch>
                 <Route path="/about">
