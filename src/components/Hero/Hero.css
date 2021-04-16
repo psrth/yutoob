@@ -15,12 +15,12 @@ input {
     border: solid rgba(128, 128, 128, 0.432) 2px;
     border-radius: 50px;
     margin-top: 10px;
-    padding: 10px;
+    padding: 12px;
     width: 85%;
     font-size: 1.25rem;
     font-weight: 100;
     color: rgb(180, 180, 180);
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
 input:focus {

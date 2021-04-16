@@ -7,6 +7,7 @@ import {
     Route,
     Link
   } from 'react-router-dom'
+  import ScriptTag from 'react-script-tag';
 
 import Yutoob from '../Yutoob/Yutoob.js'
 
@@ -59,7 +60,9 @@ function About(){
     return( <h2> About Page</h2> )
 }
 function Sponsor(){ 
-    return( <h2> Sponsor Page</h2> )
+    return( <div>
+        <h2>Sponsor Page</h2>
+    </div> )
 }
 
 export default Navbar;
