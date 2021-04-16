@@ -79,3 +79,25 @@ a:active {
         margin-left: 80px;
     }
 }
+
+.about-me {
+    color:rgb(77, 77, 77);
+}
+
+.about-me h3,h4{
+    color:rgb(36, 36, 36);
+}
+
+.about-me h3{
+    font-size: 1.8rem;
+}
+.about-me h4{
+    font-size: 1.5rem;
+}
+.about-me p{
+    font-size: 1.2rem;
+}
+
+strong {
+    color: red;
+}
