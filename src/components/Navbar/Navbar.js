@@ -18,7 +18,7 @@ const Navbar = () => {
                 <div class="nav-logo">
                     <h2>
                         <a href="https://yutoob.netlify.app/">
-                            youtoob.org
+                            yutoob.org
                         </a>
                     </h2>
                 </div>

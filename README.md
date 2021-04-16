@@ -1,5 +1,6 @@
 # yutoob.org
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3837151b-8337-4400-bb60-98ca1a56a3e5/deploy-status)](https://app.netlify.com/sites/yutoob/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3837151b-8337-4400-bb60-98ca1a56a3e5/deploy-status)](https://app.netlify.com/sites/yutoob/deploys)  
+
 A tethical way to use YouTube. No distractions, no ads, low memory + energy usage, and no clickbait aimed to take you on a night-long bender on the *Top 10 Mysteries Russia Doesn't Want You To Know.*
 
 ## Pre-emptive FAQs

@@ -5,9 +5,9 @@ const Footer = () => {
         <div>
             <div style={
                 {
-                    fontSize: "24px",
+                    fontSize: "1.5rem",
                     color: "gray",
-                    marginTop: "60px",
+                    marginTop: "60px"
                 }
             }>
                 Made with love by @psrth
